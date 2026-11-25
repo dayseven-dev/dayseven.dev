@@ -34,3 +34,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+@Suppress("UnstableApiUsage")
+gradle.lifecycle.beforeProject {
+    if (path == ":") {
+        layout.buildDirectory.set(isolated.rootProject.projectDirectory.dir(".build/project"))
+    }
+}
