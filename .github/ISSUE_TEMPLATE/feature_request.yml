@@ -1,0 +1,32 @@
+name: "Feature request"
+description: "Suggest a new feature or an improvement."
+labels: ["feature"]
+body:
+    - type: "markdown"
+      attributes:
+          value: "Search existing issues first. For open-ended ideas or questions, use Discussions."
+    - type: "textarea"
+      id: "problem"
+      attributes:
+          label: "The problem"
+          description: "What are you trying to do, and what gets in the way?"
+      validations:
+          required: true
+    - type: "textarea"
+      id: "solution"
+      attributes:
+          label: "Proposed solution"
+      validations:
+          required: true
+    - type: "dropdown"
+      id: "platform"
+      attributes:
+          label: "Platform"
+          multiple: true
+          options:
+              - "Android"
+              - "iOS"
+              - "Desktop"
+              - "Web"
+              - "Extension"
+              - "Backend"
