@@ -4,5 +4,8 @@
 # Gradle cache folder
 .gradle
 
+# Build output folder
+.build
+
 # Local properties
 local.properties
