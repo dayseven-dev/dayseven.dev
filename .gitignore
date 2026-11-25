@@ -4,4 +4,5 @@
 # Gradle cache folder
 .gradle
 
-#
+# Local properties
+local.properties
